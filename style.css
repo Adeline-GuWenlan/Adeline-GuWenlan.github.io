@@ -46,7 +46,7 @@ h2.sec{margin:3.5rem 0 0;padding-bottom:.6rem;border-bottom:1px solid var(--rule
 .prose strong{color:var(--ink);font-weight:700}
 
 .ledger{list-style:none;margin:.4rem 0 0;padding:0}
-.ledger li{display:grid;grid-template-columns:11rem 1fr;gap:1.35rem;padding:1rem;margin:0 -1rem;border-radius:4px;border-bottom:1px solid var(--rule);transition:background .2s ease}
+.ledger li{display:grid;grid-template-columns:11.5rem 1fr;gap:1.35rem;padding:1rem;margin:0 -1rem;border-radius:4px;border-bottom:1px solid var(--rule);transition:background .2s ease}
 .ledger li:last-child{border-bottom:0}
 .ledger li:hover{background:var(--wash)}
 .ledger .when{font-size:.9rem;white-space:nowrap;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:.35em}

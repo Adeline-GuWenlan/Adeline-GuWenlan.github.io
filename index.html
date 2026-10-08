@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wenlan Gu · Personal Site</title>
+<meta name="description" content="Wenlan (Adeline) Gu — scientific machine learning, optimization and neural PDE solvers.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top">Wenlan Gu</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#news">News</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme" aria-label="Toggle dark mode">◐</button>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="avatar" aria-hidden="true">WG</div>
+    <div>
+      <h1>Wenlan (Adeline) Gu</h1>
+      <p class="sub">Undergraduate · NYU Shanghai · Data Science (AI) &amp; Mathematics</p>
+      <p class="sub">Scientific Machine Learning · Optimization · Neural PDE Solvers</p>
+      <p class="links">
+        <a href="mailto:wg2381@nyu.edu">Email</a>
+        <a href="https://github.com/Adeline-GuWenlan">GitHub</a>
+        <a href="cv.pdf">CV</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a Data Science (AI concentration) student with a minor in Mathematics at NYU Shanghai, studying away at NYU New York for Fall 2026 – Spring 2027. My research sits at the intersection of machine learning and the physical sciences: how optimizers shape equivariant force fields, neural solvers for mean-field games, and learned initialization for DFT.</p>
+  </section>
+
+  <section id="news">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span>2026</span> Co-authored paper <a href="https://openreview.net/forum?id=CVXQGLlsFA"><em>Halluci-action</em></a> accepted as a poster at the NeurIPS 2026 BiAlign Workshop 🎉</li>
+      <li><span>May 2026</span> Started as a DURF Research Fellow on neural solvers for mean-field games with Prof. Mathieu Laurière.</li>
+      <li><span>Spring 2026</span> Began research on optimizer geometry in equivariant force fields with Prof. Shengjie Wang.</li>
+      <li><span>2025, 2026</span> NYU Shanghai Recognition Award and Dean's Undergraduate Research Fund.</li>
+    </ul>
+  </section>
+
+  <section id="research">
+    <h2>Research Experience</h2>
+    <div class="item"><div class="when">Spring 2026 – Present</div><div>
+      <h3>Optimizer Geometry in Equivariant Force Fields</h3>
+      <p class="org">Undergraduate Researcher · Prof. Shengjie Wang Lab, NYU Shanghai</p>
+      <ul>
+        <li>Built <b>MACEBench</b> to study how AdamW, Muon and SOAP shape equivariant force fields; implemented e3nn matrix routing and tensor-product path-aware blocking.</li>
+        <li>Implemented force-loss Hessian-vector products, Lanczos/Hutchinson curvature estimates and block-normalized 2D loss surfaces; built linear mode-connectivity probes with permutation alignment.</li>
+        <li>Analyzed weight/update spectra, stable/effective ranks and singular subspaces to isolate optimizer effects.</li>
+      </ul></div></div>
+    <div class="item"><div class="when">May 2026 – Present</div><div>
+      <h3>Neural Solvers for Mean-Field Games</h3>
+      <p class="org">DURF Research Fellow · Prof. Mathieu Laurière Lab, NYU Shanghai</p>
+      <ul>
+        <li>Built Riccati/fixed-point and Deep BSDE solvers for stochastic flocking equilibria; used the closed-form linear-quadratic case to validate learned adjoints.</li>
+        <li>Studied sensitivity to training and finite-agent sampling, and the limits of convergence in nonlinear regimes.</li>
+      </ul></div></div>
+    <div class="item"><div class="when">Jan. – May 2026</div><div>
+      <h3>Learned Initialization for DFT</h3>
+      <p class="org">Undergraduate Researcher · Prof. Shengjie Wang Lab, NYU Shanghai</p>
+      <ul>
+        <li>Contributed to a JAX model predicting constraint-valid initial electron densities for Kohn–Sham DFT, reducing SCF iterations while retaining converged accuracy.</li>
+        <li>Ran ablations across 13 molecules and built a provenance-tracked checkpoint harness (60-row benchmark table).</li>
+      </ul></div></div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <div class="item"><div class="when">2026</div><div>
+      <h3><a href="https://openreview.net/forum?id=CVXQGLlsFA">Halluci-action: Evaluating Deception in Claim–Action Alignment of Agents</a></h3>
+      <p class="org">Co-author · NeurIPS 2026 BiAlign Workshop (accepted poster)</p>
+      <p>Co-built a pipeline comparing agents' action claims with tool-execution traces, detecting claimed-but-unperformed and performed-but-undisclosed actions. <a href="https://openreview.net/forum?id=CVXQGLlsFA">OpenReview →</a></p>
+    </div></div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="cards">
+      <a class="card" href="https://github.com/Adeline-GuWenlan/FNO_Inductive_Bias">
+        <h3>Inductive Bias of Neural PDE Operators</h3>
+        <p>FNO vs. U-Net on PDEBench compressible Navier–Stokes. Similar low-frequency error, but up to 301× higher U-Net error in the high-frequency band.</p>
+        <span class="tag">Spring 2026</span> <span class="tag">Python</span>
+      </a>
+      <a class="card" href="https://github.com/Adeline-GuWenlan">
+        <h3>Gaussian Mobility Complex</h3>
+        <p>An SE(2) robot planner built from Gaussian scene/body geometry, with robot-conditioned geometric coresets and continuous path verification.</p>
+        <span class="tag">2026</span> <span class="tag">Robotics</span>
+      </a>
+      <a class="card" href="https://github.com/Adeline-GuWenlan">
+        <h3>Lab Knowledge Base (MCP + Discord)</h3>
+        <p>Python/asyncio + FastMCP service giving researchers and agents shared debugging knowledge, with SQLite FTS5/BM25 retrieval and a serialized Git queue.</p>
+        <span class="tag">2026 – Present</span> <span class="tag">Python</span>
+      </a>
+      <a class="card" href="https://github.com/Adeline-GuWenlan/MeanFieldGame_Transformer">
+        <h3>Mean Field Game Transformer</h3>
+        <p>Transformer-based approach to mean-field games.</p>
+        <span class="tag">Jupyter</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; Awards</h2>
+    <div class="item"><div class="when">Exp. May 2028</div><div>
+      <h3>New York University Shanghai</h3>
+      <p class="org">B.S. Data Science (AI concentration), Minor in Mathematics · GPA 3.815/4.0</p>
+      <p>Coursework: Scientific Computing, Efficient AI Computing, Machine Learning, Computer Vision, Linear &amp; Nonlinear Optimization.</p>
+    </div></div>
+    <ul>
+      <li>NYU Shanghai Recognition Award (2025, 2026)</li>
+      <li>Dean's Undergraduate Research Fund (2025, 2026)</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><b>Programming / ML:</b> Python, SQL, JavaScript, Bash; PyTorch, JAX, scikit-learn, e3nn.<br>
+    <b>Research computing:</b> Linux, Git, Slurm/HPC, DDP, Singularity, TensorBoard profiling.<br>
+    <b>Languages:</b> Mandarin (native), English (fluent).</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:wg2381@nyu.edu">wg2381@nyu.edu</a> · New York, NY</p>
+  </section>
+</main>
+
+<footer>© <span id="y"></span> Wenlan Gu</footer>
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+const root = document.documentElement;
+try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch(e){}
+document.getElementById('theme').onclick = () => {
+  const dark = (root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')) === 'dark';
+  root.dataset.theme = dark ? 'light' : 'dark';
+  try { localStorage.setItem('theme', root.dataset.theme); } catch(e){}
+};
+</script>
+</body>
+</html>

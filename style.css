@@ -1,7 +1,7 @@
 :root{
   --bg:#faf8f2;--surface:#fff;--ink:#1b1a15;--soft:#403d34;--muted:#726d60;
   --rule:#e5e0d3;--rule-2:#cfc8b6;--accent:#3e6136;--wash:rgba(62,97,54,.075);--glow:rgba(62,97,54,.16);
-  --sans:'Schibsted Grotesk',ui-sans-serif,system-ui,-apple-system,sans-serif;--tt:-0.014em;
+  --sans:'Times New Roman',Times,serif;--tt:-0.014em;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
